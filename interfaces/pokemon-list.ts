@@ -1,13 +1,13 @@
 export interface PokemonListResponse {
     count:    number;
-    next:     string;
+    next?:     string;
     previous?: string;
-    results:  SmallPkemon[];
+    results:  SmallPokemon[];
 }
 
-export interface SmallPkemon {
-    name: string;
-    url:  string;
-    id: string;
+export interface SmallPokemon {
+    name:string;
+    url:string;
+    id: number;
     img:string;
 }
