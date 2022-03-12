@@ -1,11 +1,11 @@
 import { FC } from "react"
 import { Card, Grid, Row, Text } from '@nextui-org/react';
 
-import { SmallPkemon } from "../../interfaces"
+import { SmallPokemon } from "../../interfaces"
 import { useRouter } from "next/router";
 
 interface Props{
-    pokemon: SmallPkemon
+    pokemon: SmallPokemon
 }
 
 export const PokemonCard: FC<Props> = ({pokemon}) => {
