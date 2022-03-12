@@ -2,7 +2,7 @@ import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/do
 import { CssBaseline } from '@nextui-org/react';
 
 class MyDocument extends Document {
-  static async getInitialProps(ctx) {
+  static async getInitialProps(ctx: DocumentContext) {
     const originalRenderPage = ctx.renderPage
 
     // Run the React rendering logic synchronously
